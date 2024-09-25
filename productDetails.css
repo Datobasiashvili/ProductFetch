@@ -1,0 +1,238 @@
+body {
+  background-color: rgb(250, 237, 226);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  padding: 0;
+}
+
+header .title{
+  margin: 30px 0 0 0;
+  width: max-content;
+  position: relative;
+}
+
+header .title #my-name {
+  color: #0793a5ce
+}
+
+header .title::after {
+  position: absolute;
+  left: 0;
+  top: 45px;
+  content: '';
+  width: 100%;
+  height: 4px;
+  background-image: linear-gradient(45deg, #DD2D4A, #0793a5ce);
+  border-radius: 25px;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  margin-right: 10px;
+}
+
+.reviews {
+  border: 3px solid #37515F;
+  color:#37515F;
+}
+
+.back-to-main {
+  border: 3px solid #DD2D4A;
+  color: black;
+  background-color: #DD2D4A;
+} 
+
+header .reviews, .back-to-main {
+  margin: 34.5px 5px 34.5px 25px;
+  padding: 5px;
+  border-radius: 25px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-size: 25px;
+}
+
+.reviews:hover, .back-to-main:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.main-heading {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-heading span {
+  color: #971224;
+}
+
+#cookie-image {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+}
+
+/*Styling window that will pop up after clicking on reviews button */
+.review-pop-up {
+  position: fixed;
+  width: 380px;
+  left: 746.5px;
+  top: 110px;
+  z-index: 1000;
+  background-color: white;
+  border: 5px solid #37515F;
+  border-radius: 25px;
+  padding: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Triangle "hat" on top of a pop-up div */
+.review-pop-up::after {
+  content: '';
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 20px solid #37515F;
+  color: transparent;
+  left: 50%;
+  transform: translateX(-50%); 
+  bottom: 100%; 
+  width: 0;
+  height: 0;
+}
+
+.review-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.review-box .comment{
+  margin-top: 5px;
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.review-box .comment-pfp {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0;
+}
+
+.review-box .comment-pfp p{
+  margin-top: 15px;
+  margin-bottom: 0;
+  font-size: 23px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.review-box .rating-date {
+  font-size: 11px;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.rating-date p{
+  margin: 0 0 0 15px;
+  padding-top: 6px;
+}
+
+.review-box img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+  margin-top: 9px;
+}
+
+/* Styling rating stars*/
+.star {
+  color: gray;
+  font-size: 18px;
+}
+
+.filled {
+  color: #971224;
+  font-size: 18px;
+}
+
+/*End of styling stars */
+
+/*End of styling pop up */
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.text-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80vh;
+}
+
+.text-container .product-name{
+  width: max-content;
+  font-family: 'Helvetica', 'Arial', sans-serif; 
+  font-weight: bold;
+  letter-spacing: -4px;
+  font-size: 80px;
+  line-height: 1.2em;
+  margin-bottom: 0px;
+}
+
+.text-container h1::after{
+  content: '\A'; /* Inserts a line break */
+  white-space: pre; /* Ensures the line break is respected */
+}
+
+.text-container p{
+  font-size: 18px;
+  margin-right: 80px;
+  line-height: 30px;
+}
+
+/*Styling the second line of the product's name */
+.text-container .second-line {
+  color: #DD2D4A;
+}
+
+.under {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 65px;
+}
+
+.box .number {
+  font-size: 40px;
+  margin-bottom: 0px;
+}
+
+.box .name {
+  margin: 0px;
+  font-size: 18px;
+}
+
+.box span{
+  color:#37515F;
+}
+
+.box .red-color {
+  color:#DD2D4A;
+}
+
+#product-image {
+  width: 80vh;
+  height: 80vh;
+  border: 10px solid #0793a5ce;
+  border-radius: 25px;
+}
