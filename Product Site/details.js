@@ -4,7 +4,7 @@ document.querySelector('.back-to-main').addEventListener('click', function(){
     if (existingWindow && !existingWindow.closed) {
         existingWindow.focus();
     } else {
-        const newWindow = window.open('file:///C:/Users/User/Desktop/Product%20Site/Product%20Site/main.html', 'myWindow');
+        const newWindow = window.open('main.html', 'myWindow');
     }
 });
 

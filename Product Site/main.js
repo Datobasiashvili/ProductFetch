@@ -50,7 +50,7 @@ fetch('https://dummyjson.com/products')
         const productId = this.id;
 
         //We open a new window (productDetails.html) for each of our objects (when clicked);
-        const newWindow = window.open('C:/Users/User/Desktop/dato2/Product Site/productDetails.html');
+        const newWindow = window.open('productDetails.html');
         
         //Spliting date so  only the common date part will show
         const dateTime = 
@@ -63,7 +63,7 @@ fetch('https://dummyjson.com/products')
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <title>${data.products[productId].title}</title>
-                <link rel='stylesheet' href='C:/Users/User/Desktop/Product Site/Product Site/productDetails.css'>
+                <link rel='stylesheet' href='productDetails.css'>
               </head>
               <body>
                 <header>
@@ -155,7 +155,7 @@ fetch('https://dummyjson.com/products')
 
                 </div>
               
-                <script src='C:/Users/User/Desktop/Product Site/Product Site/details.js'></script>
+                <script src='details.js'></script>
 
                 <!-- Making a star -->
                 
