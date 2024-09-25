@@ -63,12 +63,12 @@ fetch('https://dummyjson.com/products')
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <title>${data.products[productId].title}</title>
-                <link rel='stylesheet' href='C:/Users/User/Desktop/dato2/Product Site/productDetails.css'>
+                <link rel='stylesheet' href='C:/Users/User/Desktop/Product Site/Product Site/productDetails.css'>
               </head>
               <body>
                 <header>
                   <div class='main-heading'>
-                    <img src='C:/Users/User/Desktop/dato2/Product Site/cookie3.png' alt='cookie logo' id='cookie-image'>
+                    <img src='C:/Users/User/Desktop/Product Site/Product Site/cookie3.png' alt='cookie logo' id='cookie-image'>
                     <h1 class='title'><span id='my-name'>Dato's</span> <span>Products</span></h1>
                   </div>
 
@@ -155,7 +155,7 @@ fetch('https://dummyjson.com/products')
 
                 </div>
               
-                <script src='C:/Users/User/Desktop/dato2/Product Site/details.js'></script>
+                <script src='C:/Users/User/Desktop/Product Site/Product Site/details.js'></script>
 
                 <!-- Making a star -->
                 

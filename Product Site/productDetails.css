@@ -17,10 +17,6 @@ header .title{
   position: relative;
 }
 
-header .title #my-name {
-  color: #0793a5ce
-}
-
 header .title::after {
   position: absolute;
   left: 0;
